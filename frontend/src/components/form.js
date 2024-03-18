@@ -25,6 +25,8 @@ const Input = styled.input`
   height: 40px;
 `;
 
+const Label = styled.label``;
+
 const Button = styled.button`
     padding: 10px;
     cursor: pointer;
@@ -34,8 +36,6 @@ const Button = styled.button`
     color: white;
     height: 42px;
 `;
-
-const Label = styled.label``;
 
 const Form = ({ onEdit }) => {
   const ref = useRef();
