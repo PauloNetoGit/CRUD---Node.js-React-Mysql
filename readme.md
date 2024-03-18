@@ -41,3 +41,13 @@ e rodar novamente o script do yarn:
 
 **Feedback de quando edita, inclui ou exclui o usuário**
 - react-to astify
+
+## Rodando o Programa
+
+### BACKEND
+ - cd api e depois:
+<code>yarn start</code>
+
+### FRONTEND
+ - cd frontend e depois:
+<code>yarn start</code>
