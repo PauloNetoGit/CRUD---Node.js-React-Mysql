@@ -9,11 +9,10 @@
 ## Erro ao executar o yarn
 Caso aconteça este erro:
 
-<code>
-
+```json
     yarn : O arquivo C:\Users\name_my_pc\AppData\Roaming\npm\yarn.ps1 
     não pode ser carregado porque a execução de scripts foi desabilitada neste sistema. Para obter mais informações, consulte about_Execution_Policies em https://go.microsoft.com/fwlink/?LinkID=135170...
-</code>
+```
 
 Para ajustar temporariamente a política de execução do PowerShell e permitir a execução de scripts, você pode abrir o PowerShell como administrador e executar o seguinte comando:
 
@@ -46,8 +45,11 @@ e rodar novamente o script do yarn:
 
 ### BACKEND
  - cd api e depois:
-<code>yarn start</code>
-
+```json 
+yarn start
+```
 ### FRONTEND
  - cd frontend e depois:
-<code>yarn start</code>
+```json
+yarn start
+```
