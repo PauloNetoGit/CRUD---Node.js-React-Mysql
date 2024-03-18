@@ -23,6 +23,8 @@ function App() {
   const [users, setUsers] = useState([])
   const [onEdit, setOnEdit] = useState(null)
 
+
+  //Método que pega todos os usuários do banco
   const getUsers = async () => {
     try {
       const res = await axios.get("http://localhost:8800");
@@ -40,8 +42,8 @@ function App() {
     <>
       <Container>
         <Title>USUÁRIOS</Title>
-        <Form/>
-        <Grid users={users}/>
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers}/>
+        <Grid users={users} setUsers={setUsers} setOnEdit={setOnEdit}/>
       </Container>
       
       <ToastContainer autoClose={3000} position="bottom-left"/>

@@ -30,7 +30,7 @@ export const addUser = (req, res) => {
 // Método UPDATE para editar/atualizar os usuários
 export const updateUser = (req, res) => {
   const q =
-    "UPDATE usuarios SET `nome` = ?, `email` = ?,`fone` = ?,`data_nascimento = ? WHERE `id` = ?";
+    "UPDATE usuarios SET `nome` = ?, `email` = ?, `fone` = ?, `data_nascimento` = ? WHERE `id` = ?;";
   const values = [
     req.body.nome,
     req.body.email,
